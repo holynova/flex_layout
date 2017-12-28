@@ -1,0 +1,165 @@
+.basic, body .web header,
+body .web footer, body .web .content nav,
+body .web .content main,
+body .web .content aside {
+  border-radius: 12px;
+  box-sizing: border-box;
+  background-color: #eee;
+  text-align: center;
+  min-height: 3rem;
+  line-height: 3rem;
+  border: 1px solid #ccc;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ddd;
+}
+
+body h1 {
+  text-align: center;
+}
+
+body .box {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+body .box span.item {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  background-color: #111;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  margin: 5px;
+}
+
+body .grid {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body .grid .cell {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+body .grid .cell .inner {
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+body .grid .u1of2 {
+  flex: 0 0 50%;
+}
+
+body .grid .u1of3 {
+  flex: 0 0 33.33%;
+}
+
+body .grid .u1of4 {
+  flex: 0 0 25%;
+}
+
+body .web {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+body .web .content {
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+}
+
+body .web .content nav,
+body .web .content main,
+body .web .content aside {
+  flex: 1;
+}
+
+body .web .content nav {
+  flex: 1;
+}
+
+body .web .content main {
+  flex: 2;
+}
+
+body .web .content aside {
+  flex: 1;
+}
+
+body .input-wrapper {
+  display: flex;
+}
+
+body .input-wrapper button {
+  flex: 1;
+  line-height: 30px;
+}
+
+body .input-wrapper input {
+  flex: 5;
+}
+
+@media (max-width: 768px) {
+  .web {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .web .content {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+  }
+  .web .content nav,
+  .web .content main,
+  .web .content aside {
+    flex: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .web {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .web .content {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+  }
+  .web .content nav,
+  .web .content main,
+  .web .content aside {
+    flex: 1;
+  }
+  .web .content nav {
+    flex: 1;
+  }
+  .web .content main {
+    flex: 2;
+  }
+  .web .content aside {
+    flex: 1;
+  }
+}
+/*# sourceMappingURL=main.css.map */
